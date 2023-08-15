@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+body {
+    color: white;
+}
+header {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border-bottom: 2px solid rgb(0, 132, 68);
+    font-size: 20px;
+}
+#logo2 {
+    width: 4%;
+    position: absolute;
+    background-color: black;
+    top: 6px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+}
+#topo {
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0px ;
+    border-bottom: 2px solid rgb(0, 132, 68);
+}
+#topo li{
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#topo li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 132, 68);
+    padding: 2px 50px;
+    border-radius: 50px;
+    transition: color 0.3s;
+}
+.fundo {
+    z-index: 0;
+    background: linear-gradient(to right, rgb(1, 61, 32), rgb(3, 193, 101));
+    padding: 82.5px 0px;
+}
+article {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    z-index: 0;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-icon {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0px 0px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 10px;
+    align-items: center;
+    width: 100px;
+    top: 17px;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+#menu-toggle:checked + #menu-icon + .sidebar {
+        left: 0;
+    }    
+.sidebar ul {
+    background-color: #000000;
+    border-right: 1px solid rgb(0, 0, 0);
+}
+.sidebar ul li {
+    margin-top: 90px;
+    text-align: center;
+    background-color: black;
+}    
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    transition: 0.3s;
+    
+}
+footer {
+    text-align: center;
+    border-top: 2px solid rgb(0, 132, 68);
+}
+@media (max-width: 768px) {
+    #topo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right:1px;
+    padding: 20px 0px;
+    background-color: rgb(20, 20, 20);
+    z-index: 0;
+}
+#topo li {
+    background-color: rgb(20, 20, 20) ;
+    margin-top: 10px;
+    padding: 0 0;
+    z-index: 0;
+    margin-bottom: 10px;
+}
+}
+#logo2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 55px
+}
+#topo li a:hover {
+    color: rgb(92, 173, 0);
+    text-shadow: 0px 0px 10px ;
+}
+.sidebar ul li a:hover {
+    color: rgb(92, 173, 0);
+    text-shadow: 0px 0px 10px ;
+}
+.logo3 {
+    background-color: transparent;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: width 0.4s;
+}
+#wpp:hover {
+    width:35px ;
+}
+#insta:hover {
+    width:35px ;}
+#git:hover {
+    width:35px ;}
+#lkdn:hover {
+    width:35px ;}
+#yt:hover {
+    width:35px ;}
+p {
+    position: relative;
+    top: 20px;
+    height: 4px;
+    z-index: 0;
+    background: transparent;
+    padding: 77.4px 0px;
+}
+section {
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
